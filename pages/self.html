@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <title>Leave</title>
+</head>
+
+<body>
+    <header class="header">
+        <h1 class="header__h1">Self Apply</h1>
+        <nav class="header__nav">
+            <ul class="header__ul">
+                <li>
+                    <a href="/.">Home</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <article class="article">
+            <form class="leave-form">
+                <!-- <fieldset> -->
+                <!-- <legend class="leave-form-legebd"> New Application :- </legend> -->
+                <table class="leave-form-container">
+                    <thead></thead>
+                    <tbody>
+                        <tr>
+                            <td><label class="leave-form-label" for="startDate">Start :</label></td>
+                            <td><input class="leave-form-date" type="date" name="startDate" id="startDate"
+                                    placeholder="dd-mm-yyyy" required>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><label class="leave-form-label" for="endDate">End :</label></td>
+                            <td><input class="leave-form-date" type="date" name="endDate" id="endDate"
+                                    placeholder="dd-mm-yyyy" required></td>
+                        </tr>
+                        <tr>
+                            <td><label class="leave-form-label" for="leaveType">Type :</label></td>
+                            <td>
+                                <select class="leave-form-select" name="leaveType" id="leaveType">
+                                    <option value="CL" selected="selected">CL</option>
+                                    <option value="EL">EL</option>
+                                    <option value="HL">HL</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><label class="leave-form-label" for="leaveReason">Reason :</label></td>
+                            <td><input type="text" class="leave-form-text" name="leaveReason" id="leaveReason"
+                                    maxlength="150" required></td>
+                        </tr>
+                        <tr>
+                            <td><label class="leave-form-label" for="chargeBy">Charge By :</label></td>
+                            <td><input type="text" class="leave-form-text" name="chargeBy" id="chargeBy" maxlength="50"
+                                    required></td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <td></td>
+                            <td><button class="leave-form-button" id="submit">Submit</button></td>
+                        </tr>
+                    </tfoot>
+                </table>
+                <!-- </fieldset> -->
+            </form>
+        </article>
+
+    </main>
+
+    <footer class="footer">
+        <p>
+            <span class="nowrap">
+                Copyright&nbsp;&copy;&nbsp;
+                <time id="year"></time>
+            </span>
+            <span class="nowrap">SKSL</span>
+        </p>
+    </footer>
+</body>
+
+</html>
