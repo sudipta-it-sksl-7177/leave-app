@@ -8,29 +8,8 @@
     box-sizing: border-box;
 }
 
-/* img {
-    display: block;
-    max-width: 100%;
-    height: auto;
-    padding: 0.5rem;
-} */
-
 input, button, textarea {
     font: inherit;
-}
-
-/* UTILITY CLASSES */
-.offscreen {
-    position: absolute;
-    left: -10000px;
-}
-
-.nowrap {
-    white-space: nowrap;
-}
-
-.center {
-    text-align: center;
 }
 
 /* GENERAL STYLES */
@@ -46,8 +25,6 @@ body {
     background-color: var(--BODY-BGCOLOR);
     color: var(--FONT-COLOR);
     min-height: 100vh;
-    /* max-width: 100vw;
-    min-width: 320px; */
     width: max(100%, 350px);
     margin: 0 auto;
     border-left: var(--BORDERS);
@@ -70,9 +47,6 @@ h2, h3 {
 main {
     flex-grow: 1;
     display: flex;
-    /* align-items: center;
-    justify-items: center; */
-    /* flex: 1; */
     min-height: 100vh;
     background: url("/img/ws.jpg") center no-repeat;
     background-size: cover;
@@ -125,7 +99,7 @@ a:active {
 
 table {
     border: 2em;
-    border: 5px solid rgb(35, 155, 45);
+    border: 5px solid var(--FORM-BORDER-COLOR);
     border-radius: var(--BORDER-RADIUS);
 }
 
@@ -140,7 +114,6 @@ thead, tbody, tfoot, tr {
 
 .leave-form-container {
     display: grid;
-    /* place-content: center; */
     grid-template-columns: repeat(1, 1fr);
     grid-template-areas:
         "th th"
@@ -151,9 +124,6 @@ thead, tbody, tfoot, tr {
         "tdl5 tx2"
         "tf tf";
     gap: 0.1em;
-    /* scroll-margin-top: 6.5rem;
-    margin: var(--MARGIN); */
-    /* margin-bottom: 1em; */
     padding: 0.5em;
     color: var(--FONT-COLOR-LIGHT);
 }
@@ -179,18 +149,18 @@ thead, tbody, tfoot, tr {
     grid-area: tf;
     width: 100%;
     cursor: pointer;
-    color: #fff;
-    background-color: #04AA6D;
+    color: var(--BUTTON-COLOR);
+    background-color: var(--BUTTON-BG-COLOR);
     border: none;
     border-radius: var(--BORDER-RADIUS);
 }
 
 .leave-form-button:hover {
-    background-color: #3e8e41
+    background-color: var(--BUTTON-ACTIVE-COLOR);
 }
 
 .leave-form-button:active {
-    background-color: #3e8e41;
+    background-color: var(--HIGHLIGHT-COLOR);
     transform: translateY(4px);
 }
 
@@ -232,13 +202,11 @@ tfoot td {
     background-color: var(--CARD-BG-COLOR);
     color: black;
     font-weight: bold;
-    border: 5px solid black;
+    border: 5px solid var(--BORDER-COLOR);
     border-radius: var(--BORDER-RADIUS);
     padding: 1rem;
-    /* margin: 1rem; */
     display: block;
     place-content: center;
-    /* align-items: center; */
 }
 
 .card-article p {
@@ -249,15 +217,15 @@ tfoot td {
     width: 100%;
     height: 30px;
     cursor: pointer;
-    color: #fff;
-    background-color: #04AA6D;
+    color: var(--BUTTON-COLOR);
+    background-color: var(--BUTTON-BG-COLOR);
     border: none;
     border-radius: var(--BORDER-RADIUS);
     margin: 2px;
 }
 
 .card-button:active {
-    background-color: #3e8e41;
+    background-color: var(--BUTTON-ACTIVE-COLOR);
     transform: translateY(4px);
 }
 

@@ -12,15 +12,15 @@
     --BGIMAGE: linear-gradient(to bottom, var(--BGCOLOR), var(--BGCOLOR-FADE));
     --BODY-BGCOLOR: whitesmoke;
     --BORDER-COLOR: #333;
+    --FORM-BORDER-COLOR: rgb(35, 155, 45);
     --BUTTON-COLOR: whitesmoke;
+    --BUTTON-BG-COLOR: #04AA6D;
+    --BUTTON-ACTIVE-COLOR: #3e8e41;
     --FONT-COLOR: black;
     --FONT-COLOR-LIGHT: whitesmoke;
     --HEADER-BGCOLOR: black;
-    /* --HEADER-BGCOLOR: linear-gradient(135deg, hsla(120, 100%, 50%, 0.726) 10%, hsl(157, 100%, 50%) 60%); */
     --HEADER-COLOR: whitesmoke;
-    --HERO-BGCOLOR: rgba(51, 178, 51, 0.75);
-    --HERO-COLOR: whitesmoke;
-    --HIGHLIGHT-COLOR: rgb(51, 178, 51);
+    --HIGHLIGHT-COLOR: rgb(51, 178, 51, 0.75);
     --LINK-ACTIVE: orange;
     --LINK-COLOR: black;
     --LINK-HOVER: hsla(0, 0%, 0%, 0.6);
